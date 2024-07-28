@@ -1,0 +1,11 @@
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

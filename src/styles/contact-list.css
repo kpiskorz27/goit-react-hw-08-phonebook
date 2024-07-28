@@ -1,0 +1,49 @@
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-item .contact-info {
+  flex: 1;
+}
+
+.contact-item button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-item button:hover {
+  background-color: #ff1a1a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.divForm {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  background-color: rgba(245, 245, 245, 0.938);
+  width: 500px;
+  border-radius: 20px;
+  box-shadow: rgba(160, 158, 161, 0.25) 0px 50px 100px -20px,
+    rgba(255, 255, 255, 0.3) 0px 0px 60px -30px,
+    rgba(255, 255, 255, 0.35) 0px -2px 6px 0px inset;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #282c34;
+}
