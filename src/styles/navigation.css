@@ -1,9 +1,9 @@
 nav {
-  background-color: #282c34;
+  background-color: darkgray;
   padding: 1rem;
   display: flex;
-  justify-content: center; /* center links horizontally */
-  gap: 1rem; /* space between links */
+  justify-content: center;
+  gap: 1rem;
 }
 
 nav a {

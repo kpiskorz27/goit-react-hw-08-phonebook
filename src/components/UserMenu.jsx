@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../slices/authSlice';
+import '../styles/user-menu.css';
 
 const UserMenu = () => {
   const dispatch = useDispatch();
@@ -11,13 +12,15 @@ const UserMenu = () => {
   };
 
   if (!user) {
-    return <p>Not logged in</p>;
+    return null;
   }
 
   return (
-    <div>
-      <p>{user.email}</p>
-      <button onClick={handleLogout}>Logout</button>
+    <div className="user-menu">
+      <p className="user-email">{user.email}</p>
+      <button className="logout-button" onClick={handleLogout}>
+        Logout
+      </button>
     </div>
   );
 };

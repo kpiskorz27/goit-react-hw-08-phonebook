@@ -1,7 +1,7 @@
-// Login.jsx
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { login } from '../slices/authSlice';
+import '../styles/forms.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -10,31 +10,35 @@ const Login = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(login({ email, password }));
+    const userData = { email, password };
+    dispatch(login(userData));
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Email
-        <input
-          type="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        Password
-        <input
-          type="password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-          required
-        />
-      </label>
-      <button type="submit">Login</button>
-    </form>
+    <div className="form-container">
+      <form onSubmit={handleSubmit}>
+        <div className="form-title">Login</div>
+        <label>
+          Email
+          <input
+            type="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          Password
+          <input
+            type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            required
+          />
+        </label>
+        <button type="submit">Login</button>
+      </form>
+    </div>
   );
 };
 

@@ -7,7 +7,6 @@ import axios from 'axios';
 
 const API_URL = 'https://connections-api.goit.global/contacts';
 
-// Utility function to get the token from localStorage
 const getAuthHeader = () => {
   const token = localStorage.getItem('token');
   return { Authorization: `Bearer ${token}` };

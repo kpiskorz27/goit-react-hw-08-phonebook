@@ -3,10 +3,10 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  font-size: 16px; /* corrected font-size to be a valid value */
+  font-size: 16px;
   color: black;
   background-color: rgba(245, 245, 245, 0.938);
-  margin: 0; /* reset default body margin */
+  margin: 0;
 }
 
 .divForm {
